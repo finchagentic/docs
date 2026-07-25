@@ -1,0 +1,68 @@
+# Troubleshooting
+
+## Tools not appearing
+
+1. Restart the MCP client fully (not just reload window)  
+2. Confirm config path for your client ([install.md](./install.md))  
+3. `npx clear-npx-cache` then restart  
+4. Run `noelclaw doctor`  
+
+## Old version stuck
+
+```bash
+npx clear-npx-cache
+npx -y -p @noelclaw/mcp@3.44.0 noelclaw --version
+```
+
+Ensure every client entry pins `@3.44.0`.
+
+## Auth / session errors
+
+- Cloud vault/agents need `NOELCLAW_SESSION_TOKEN`  
+- Local vault mode works without account for core vault tools  
+- Re-login from Finch App if token expired  
+
+## `web_search` / scrape weak or failing
+
+Set `FIRECRAWL_API_KEY` in MCP env. Without it, quality falls back or fails depending on path.
+
+## Swap refused
+
+- Price impact over cap  
+- Missing estimate/preview/confirm  
+- Wrong family: Base → `base_mcp_*`, Robinhood Chain stocks → `rh_mcp_*` (not 0x Base tools)  
+
+## GitHub tools
+
+Need `GITHUB_TOKEN` for search/private ops.
+
+## Rate limits (429)
+
+Many paths auto-retry with backoff. Wait; don’t hammer.
+
+## Diagnose anything
+
+```bash
+noelclaw doctor
+```
+
+## App Terminal has no tools
+
+- Convex `noelShell` must be deployed (`npx convex dev`)  
+- Frontend falls back to plain chat if shell action fails  
+- Terminal tool set ≠ full MCP 121 tools  
+
+## API Market buyer errors
+
+- Invalid / revoked API key  
+- Budget hard-cap hit (402-style)  
+- No healthy offers for model  
+- Settlement flag off in non-prod  
+
+## Still stuck
+
+1. `doctor` output  
+2. MCP client logs  
+3. Package version  
+4. Whether local vault is on  
+5. Exact tool name that failed  
