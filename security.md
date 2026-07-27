@@ -32,10 +32,10 @@ Relevant tools: `base_mcp_estimate` → `base_mcp_swap` / `base_mcp_send`, `rh_m
 
 ```bash
 # correct
-npx -y -p @noelclaw/mcp@3.44.0 noelclaw-mcp
+npx -y -p @finchagentic/mcp@4.0.0 finch-mcp
 
 # wrong
-npx -y @noelclaw/mcp@latest
+npx -y @finchagentic/mcp@latest
 ```
 
 Wallet + credential capabilities make supply-chain pinning non-optional.

@@ -2,7 +2,7 @@
 
 Always pin the package version. Never use `@latest`.
 
-**Current pin:** `@noelclaw/mcp@3.44.0`
+**Current pin:** `@finchagentic/mcp@4.0.0`
 
 ---
 
@@ -11,13 +11,13 @@ Always pin the package version. Never use `@latest`.
 Detects common desktop MCP clients and writes config:
 
 ```bash
-npx -y -p @noelclaw/mcp@3.44.0 noelclaw install
+npx -y -p @finchagentic/mcp@4.0.0 finch install
 ```
 
-Claude Code uses a dedicated command (config path differs):
+### Claude Code
 
 ```bash
-claude mcp add noelclaw -s user -- npx -y -p @noelclaw/mcp@3.44.0 noelclaw-mcp
+claude mcp add finch -s user -- npx -y -p @finchagentic/mcp@4.0.0 finch-mcp
 ```
 
 ---
@@ -29,9 +29,9 @@ claude mcp add noelclaw -s user -- npx -y -p @noelclaw/mcp@3.44.0 noelclaw-mcp
 ```json
 {
   "mcpServers": {
-    "noelclaw": {
+    "finch": {
       "command": "npx",
-      "args": ["-y", "-p", "@noelclaw/mcp@3.44.0", "noelclaw-mcp"]
+      "args": ["-y", "-p", "@finchagentic/mcp@4.0.0", "finch-mcp"]
     }
   }
 }
@@ -40,7 +40,7 @@ claude mcp add noelclaw -s user -- npx -y -p @noelclaw/mcp@3.44.0 noelclaw-mcp
 ### Hermes
 
 ```bash
-hermes mcp add noelclaw -- npx -y -p @noelclaw/mcp@3.44.0 noelclaw-mcp
+hermes mcp add finch -- npx -y -p @finchagentic/mcp@4.0.0 finch-mcp
 ```
 
 ### VS Code
@@ -50,10 +50,10 @@ hermes mcp add noelclaw -- npx -y -p @noelclaw/mcp@3.44.0 noelclaw-mcp
 ```json
 {
   "servers": {
-    "noelclaw": {
+    "finch": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "-p", "@noelclaw/mcp@3.44.0", "noelclaw-mcp"]
+      "args": ["-y", "-p", "@finchagentic/mcp@4.0.0", "finch-mcp"]
     }
   }
 }
@@ -66,10 +66,10 @@ hermes mcp add noelclaw -- npx -y -p @noelclaw/mcp@3.44.0 noelclaw-mcp
 ```json
 {
   "context_servers": {
-    "noelclaw": {
+    "finch": {
       "source": "custom",
       "command": "npx",
-      "args": ["-y", "-p", "@noelclaw/mcp@3.44.0", "noelclaw-mcp"]
+      "args": ["-y", "-p", "@finchagentic/mcp@4.0.0", "finch-mcp"]
     }
   }
 }
@@ -95,12 +95,12 @@ hermes mcp add noelclaw -- npx -y -p @noelclaw/mcp@3.44.0 noelclaw-mcp
 ```json
 {
   "mcpServers": {
-    "noelclaw": {
+    "finch": {
       "command": "npx",
-      "args": ["-y", "-p", "@noelclaw/mcp@3.44.0", "noelclaw-mcp"],
+      "args": ["-y", "-p", "@finchagentic/mcp@4.0.0", "finch-mcp"],
       "env": {
-        "NOELCLAW_SESSION_TOKEN": "noel_…",
-        "NOELCLAW_TOOLS": "all",
+        "FINCH_SESSION_TOKEN": "…",
+        "FINCH_TOOLS": "all",
         "FIRECRAWL_API_KEY": "fc-…"
       }
     }
@@ -110,8 +110,8 @@ hermes mcp add noelclaw -- npx -y -p @noelclaw/mcp@3.44.0 noelclaw-mcp
 
 | Variable | Why |
 |----------|-----|
-| `NOELCLAW_SESSION_TOKEN` | Cloud vault / agents / account-bound tools |
-| `NOELCLAW_TOOLS` | `core` (default) or `all` / `defi` palettes |
+| `FINCH_SESSION_TOKEN` | Cloud vault / agents / account-bound tools |
+| `FINCH_TOOLS` | `core` (default) or `all` / `defi` palettes |
 | `FIRECRAWL_API_KEY` | Higher-quality web scrape/search |
 
 No LLM API key is required for tools to run — your MCP client’s model is the brain.
@@ -123,7 +123,7 @@ See [configuration.md](./configuration.md).
 ## After install
 
 1. Fully restart the MCP client  
-2. `noelclaw doctor`  
+2. `finch doctor`  
 3. If an old version sticks: `npx clear-npx-cache` then restart  
 
 ---
@@ -131,10 +131,10 @@ See [configuration.md](./configuration.md).
 ## Global CLI (optional)
 
 ```bash
-npm install -g @noelclaw/mcp@3.44.0
-noelclaw doctor
-noelclaw setup
-noelclaw vault
+npm install -g @finchagentic/mcp@4.0.0
+finch doctor
+finch setup
+finch vault
 ```
 
-Binary names: `noelclaw`, `noelclaw-mcp` (technical). Product brand remains **Finch**.
+Binaries: `finch` · `finch-mcp`.

@@ -36,10 +36,10 @@ This is **not** Robinhood brokerage / `agent.robinhood.com`.
 
 API Market buyer/seller settlement uses **USDG** on Robinhood Chain — see [../app/api-market.md](../app/api-market.md).
 
-## NOELCLAW token note
+## $FINCH token note
 
 Product CA on RH (current): `0x842245b92b3932aa8e759a1dac1eb5ce10cc4f0e`  
-Do not use stale Base CAs for NOELCLAW trading/analysis.
+Do not use stale Base CAs for $FINCH trading/analysis.
 
 ## Rules
 

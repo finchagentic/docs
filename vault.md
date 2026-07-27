@@ -41,7 +41,7 @@ what vault entries relate to Base DeFi?
 With local mode enabled:
 
 ```
-~/.noelclaw/vault/
+~/.finch/vault/
 ```
 
 Plain files — back up with `cp` or `git`. Credentials use AES-256-GCM.

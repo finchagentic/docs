@@ -2,7 +2,7 @@
 
 ## Tool palettes
 
-| `NOELCLAW_TOOLS` | Meaning |
+| `FINCH_TOOLS` | Meaning |
 |-----------------|---------|
 | `core` (default) | Smaller palette — lower LLM context cost |
 | `all` | Full registered set (**121** tools) |
@@ -11,7 +11,7 @@
 Set in MCP client `env`:
 
 ```json
-"env": { "NOELCLAW_TOOLS": "all" }
+"env": { "FINCH_TOOLS": "all" }
 ```
 
 Banner / doctor report **exposed** count, not always the full registered total.
@@ -22,8 +22,8 @@ Banner / doctor report **exposed** count, not always the full registered total.
 
 | Variable | Required | Purpose |
 |----------|----------|---------|
-| `NOELCLAW_SESSION_TOKEN` | Recommended for cloud tools | Session from Finch App / login |
-| `NOELCLAW_CONVEX_URL` | Rarely | Override backend site URL |
+| `FINCH_SESSION_TOKEN` | Recommended for cloud tools | Session from Finch App / login |
+| `FINCH_CONVEX_URL` | Rarely | Override backend site URL |
 
 ### Optional quality
 
@@ -37,7 +37,7 @@ Banner / doctor report **exposed** count, not always the full registered total.
 
 Tools themselves do **not** need an LLM key. Keys matter for:
 
-- CLI agent loop (`noelclaw run`)  
+- CLI agent loop (`finch run`)  
 - Cron / scheduled agents with no client model  
 - Some deep research report modes  
 
@@ -48,12 +48,12 @@ Tools themselves do **not** need an LLM key. Keys matter for:
 | `OPENAI_API_KEY` | OpenAI |
 | `OPENAI_BASE_URL` | OpenAI-compatible self-host (LiteLLM, vLLM, Ollama, OpenRouter) |
 | `GROK_API_KEY` | xAI Grok |
-| `NOELCLAW_PROVIDER` | Force `bankr` \| `anthropic` \| `openai` \| `grok` |
+| `FINCH_PROVIDER` | Force `bankr` \| `anthropic` \| `openai` \| `grok` |
 
 ## Guided setup
 
 ```bash
-npx -y -p @noelclaw/mcp@3.44.0 noelclaw setup
+npx -y -p @finchagentic/mcp@4.0.0 finch setup
 ```
 
 Picks providers and can enable local vault/memory.
@@ -68,10 +68,10 @@ Finch App backend uses Convex dashboard secrets (not Vite `VITE_*` for Alchemy):
 | `CUSTOM_LLM_*` / `NINE_ROUTER_KEY` | Terminal / Build models |
 | `BANKR_API_KEY` | Platform chat gateway |
 | Wallet encryption keys | Custodial execution wallets |
-| Market settlement flags | API Market live routing |
+| `MARKET_SETTLEMENT_LIVE` | API Market paid routing — **off** at soft-launch (free with key; USDG does not move) |
 
 Frontend public env should stay minimal (`VITE_CONVEX_URL`, `VITE_CONVEX_SITE_URL`). Never put Alchemy secrets in `VITE_`.
 
 ## Version pin
 
-Always pin `@noelclaw/mcp@3.44.0` in install docs and client configs. Bumping versions is a deliberate changelog event — not silent `@latest`.
+Always pin `@finchagentic/mcp@4.0.0` in install docs and client configs. Bumping versions is a deliberate changelog event — not silent `@latest`.

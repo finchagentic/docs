@@ -4,34 +4,30 @@ The npm package exposes:
 
 | Binary | Role |
 |--------|------|
-| `noelclaw` | User CLI (doctor, setup, vault, install, …) |
-| `noelclaw-mcp` | MCP stdio server entry |
-
-Product brand is **Finch**; binary names remain technical.
+| `finch` | User CLI (doctor, setup, vault, install, …) |
+| `finch-mcp` | MCP stdio server entry |
 
 ## Common commands
 
 ```bash
 # Configure clients
-noelclaw install
+finch install
 
 # Health
-noelclaw doctor
+finch doctor
 
 # Local vault + memory wizard
-noelclaw setup
+finch setup
 
 # Inspect vault path / contents
-noelclaw vault
-
-# List tools (after global install or via npx)
-noelclaw tools   # if available in your version
+finch vault
 ```
 
 Via npx without global install:
 
 ```bash
-npx -y -p @noelclaw/mcp@3.44.0 noelclaw doctor
+npx -y -p @finchagentic/mcp@4.0.0 finch doctor
+npx -y -p @finchagentic/mcp@4.0.0 finch setup
 ```
 
 ## Doctor expectations
@@ -49,8 +45,8 @@ Zero critical reds is the goal. Warnings for optional keys are normal.
 ## Version
 
 ```bash
-noelclaw --version
-# should match pinned package, e.g. 3.44.0
+finch --version
+# should match pinned package, e.g. 4.0.0
 ```
 
 If clients load a stale binary: `npx clear-npx-cache` and restart the client.

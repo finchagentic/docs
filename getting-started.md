@@ -4,13 +4,13 @@
 
 ```bash
 # 1. Install / configure your MCP client
-npx -y -p @noelclaw/mcp@3.44.0 noelclaw install
+npx -y -p @finchagentic/mcp@4.0.0 finch install
 
 # 2. Health check
-npx -y -p @noelclaw/mcp@3.44.0 noelclaw doctor
+npx -y -p @finchagentic/mcp@4.0.0 finch doctor
 
 # 3. (Optional) fully local vault + memory
-npx -y -p @noelclaw/mcp@3.44.0 noelclaw setup
+npx -y -p @finchagentic/mcp@4.0.0 finch setup
 ```
 
 Then open Claude Code / Cursor / Hermes and say:

@@ -5,7 +5,7 @@ Finch can run **fully local**: vault and optional memory on your disk, wallet ke
 ## Enable
 
 ```bash
-npx -y -p @noelclaw/mcp@3.44.0 noelclaw setup
+npx -y -p @finchagentic/mcp@4.0.0 finch setup
 # answer yes to local vault (and optionally local memory)
 ```
 
@@ -13,16 +13,16 @@ npx -y -p @noelclaw/mcp@3.44.0 noelclaw setup
 
 | Piece | Location | Notes |
 |-------|----------|--------|
-| **Vault** | `~/.noelclaw/vault/` | Versioned artifacts + knowledge graph. Plain files — `cp`, `git`, sync yourself |
+| **Vault** | `~/.finch/vault/` | Versioned artifacts + knowledge graph. Plain files — `cp`, `git`, sync yourself |
 | **Memory** | Self-hosted [supermemory](https://github.com/supermemoryai/supermemory) | Optional semantic recall; without it vault falls back to local full-text |
-| **Wallet** | `~/.noelclaw/wallet.json` | Keys never leave your machine |
+| **Wallet** | `~/.finch/wallet.json` | Keys never leave your machine |
 | **Brain** | Your MCP client model | Claude / Cursor / Hermes — no BYOK key required for tools |
 
 ## Inspect
 
 ```bash
-noelclaw vault      # path, contents, backup hints
-noelclaw doctor     # confirm "Local vault: on"
+finch vault      # path, contents, backup hints
+finch doctor     # confirm "Local vault: on"
 ```
 
 ## What still needs cloud / account

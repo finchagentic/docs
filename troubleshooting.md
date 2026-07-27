@@ -5,20 +5,20 @@
 1. Restart the MCP client fully (not just reload window)  
 2. Confirm config path for your client ([install.md](./install.md))  
 3. `npx clear-npx-cache` then restart  
-4. Run `noelclaw doctor`  
+4. Run `finch doctor`  
 
 ## Old version stuck
 
 ```bash
 npx clear-npx-cache
-npx -y -p @noelclaw/mcp@3.44.0 noelclaw --version
+npx -y -p @finchagentic/mcp@4.0.0 finch --version
 ```
 
-Ensure every client entry pins `@3.44.0`.
+Ensure every client entry pins `@4.0.0`.
 
 ## Auth / session errors
 
-- Cloud vault/agents need `NOELCLAW_SESSION_TOKEN`  
+- Cloud vault/agents need `FINCH_SESSION_TOKEN`  
 - Local vault mode works without account for core vault tools  
 - Re-login from Finch App if token expired  
 
@@ -43,7 +43,7 @@ Many paths auto-retry with backoff. Wait; don’t hammer.
 ## Diagnose anything
 
 ```bash
-noelclaw doctor
+finch doctor
 ```
 
 ## App Terminal has no tools
@@ -57,7 +57,7 @@ noelclaw doctor
 - Invalid / revoked API key  
 - Budget hard-cap hit (402-style)  
 - No healthy offers for model  
-- Settlement flag off in non-prod  
+- Settlement disabled at soft-launch (off in **all** environments, including prod)  
 
 ## Still stuck
 

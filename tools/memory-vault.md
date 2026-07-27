@@ -65,7 +65,7 @@ User: save bull/bear ETH thesis to vault
 
 ## Local vs cloud
 
-- Local vault directory: `~/.noelclaw/vault/`  
+- Local vault directory: `~/.finch/vault/`  
 - Cloud vault requires session token  
 - Credentials always encrypted at rest in local vault mode  
 

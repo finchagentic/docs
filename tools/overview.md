@@ -1,8 +1,8 @@
 # Tools overview
 
-Finch MCP registers **121 tools** (measured from `@noelclaw/mcp@3.44.0` `ALL_TOOLS.length`).
+Finch MCP registers **121 tools** (measured from `@finchagentic/mcp@4.0.0` `ALL_TOOLS.length`).
 
-Default exposure is the **`core`** palette. Set `NOELCLAW_TOOLS=all` for the full set.
+Default exposure is the **`core`** palette. Set `FINCH_TOOLS=all` for the full set.
 
 ## Pillars
 
@@ -49,7 +49,7 @@ Default exposure is the **`core`** palette. Set `NOELCLAW_TOOLS=all` for the ful
 `web_scrape`, `web_search`, `deep_research`, `research_compare`, `research_chain`
 
 ### Market (12)
-`get_market_data`, `get_token_data`, `compare_tokens`, `market_overview`, `token_history`, `get_base_token_data`, `ask_noel`, `market_thesis`, `trade_plan`, `score_token`, `check_token`, `scan_market`
+`get_market_data`, `get_token_data`, `compare_tokens`, `market_overview`, `token_history`, `get_base_token_data`, `ask_finch`, `market_thesis`, `trade_plan`, `score_token`, `check_token`, `scan_market`
 
 ### GitHub (8)
 `github_list_repos`, `github_list_prs`, `github_get_pr`, `github_list_issues`, `github_get_issue`, `github_get_file`, `github_get_commits`, `github_search_code`
@@ -61,7 +61,7 @@ Default exposure is the **`core`** palette. Set `NOELCLAW_TOOLS=all` for the ful
 `miroshark_simulate`, `miroshark_status`, `miroshark_stop`, `audit_contract`
 
 ### OS / wallet (7)
-`get_noel_ledger`, `get_wallet_address`, `get_wallet_balance`, `wallet_sign_message`, `noel_status`, `noel_diagnostics`, `noel_shell_chat`
+`get_finch_ledger`, `get_wallet_address`, `get_wallet_balance`, `wallet_sign_message`, `finch_status`, `finch_diagnostics`, `finch_shell_chat`
 
 ### Other (3)
 `get_defi_yields`, `list_playbooks`, `run_playbook`

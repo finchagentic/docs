@@ -1,13 +1,13 @@
 # Finch Docs
 
-**Finch** is the runtime layer for Agentic AI — persistent memory, vault, agents, workflows, and execution tools that survive every session.
+**Finch** is the runtime layer for Agentic AI - persistent memory, vault, agents, workflows, and execution tools that survive every session.
 
 This documentation covers:
 
-1. **Finch MCP** (`@noelclaw/mcp`) — install once into Claude Code, Cursor, Hermes, Windsurf, Codex, and any MCP client  
+1. **Finch MCP** (`@finchagentic/mcp`) — install once into Claude Code, Cursor, Hermes, Windsurf, Codex, and any MCP client  
 2. **Finch App** — Terminal, Trading, Wallet, API Market, Skills in the browser  
 
-> Package name on npm is still `@noelclaw/mcp` (technical identifier). The product brand is **Finch**.
+> npm package: `@finchagentic/mcp` · product brand: **Finch**.
 
 ---
 
@@ -19,7 +19,7 @@ This documentation covers:
 | [Install](./install.md) | Every MCP client + pin rules |
 | [Local mode](./local-mode.md) | Vault + memory on your machine, no account |
 | [Configuration](./configuration.md) | Env vars, tool palettes, providers |
-| [CLI](./cli.md) | `noelclaw` / doctor / setup / vault |
+| [CLI](./cli.md) | `finch` / doctor / setup / vault |
 
 ## Product pillars
 
@@ -67,12 +67,12 @@ This documentation covers:
 
 | Fact | Value |
 |------|--------|
-| MCP package | `@noelclaw/mcp@3.44.0` (pin — never `@latest`) |
+| MCP package | `@finchagentic/mcp@4.0.0` (pin — never `@latest`) |
 | Registered tools | **121** |
-| Default tool palette | `core` (set `NOELCLAW_TOOLS=all` for full set) |
+| Default tool palette | `core` (set `FINCH_TOOLS=all` for full set) |
 | Primary chains | Base `8453` · Robinhood Chain `4663` |
 | Settlement asset (API Market) | USDG on Robinhood Chain |
-| npm | https://www.npmjs.com/package/@noelclaw/mcp |
+| npm | https://www.npmjs.com/package/@finchagentic/mcp |
 
 ---
 

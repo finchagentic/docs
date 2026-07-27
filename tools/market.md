@@ -1,5 +1,12 @@
 # Market & scanner tools
 
+> **Note:** this page is the **crypto / stock market scanner + analytics** tool
+> palette (MCP). It is **not** the API Market (model inference marketplace).
+> For buying/selling LLM inference with an API key, see
+> [API Market](../app/api-market.md).
+
+
+
 ## Market / analytics
 
 | Tool | Purpose |
@@ -15,7 +22,7 @@
 | `score_token` | Scoring |
 | `check_token` | Health / checks |
 | `scan_market` | Scan |
-| `ask_noel` | Natural-language market helper |
+| `ask_finch` | Natural-language market helper |
 
 ## Scanner / sim
 

@@ -8,11 +8,11 @@ The Terminal is chat with **tool calling** — analytics, quotes, wallet, automa
 |------------|--------------------|
 | Market board | `get_market_data`, `market_overview` |
 | Token deep dive | `get_token_data`, `compare_tokens` |
-| Robinhood Chain board | `get_rh_chain` |
+| Robinhood Chain board | `rh_mcp_list_stocks` |
 | Swap quote / execute | `estimate_swap`, `execute_swap` (UI confirm) |
 | Wallet | `get_wallet_balance` |
 | Automations | `create_automation` |
-| Paid API call | `call_api` on connected listings |
+| Paid API call | Market calls surface via the API Market dashboard / OpenAI-compatible `/v1/chat/completions` (see [api-market.md](./api-market.md)) |
 
 This is a **focused subset**, not full MCP parity. Vault/memory tools may exist in MCP more completely than in shell.
 
@@ -31,7 +31,7 @@ Operators set Convex env:
 - Analytics tools → quiet chips (no raw dumps)  
 - Swap → estimate card → human confirm → execute with `confirmed=true`  
 - RH research → full board first, not a single-token collapse  
-- NOELCLAW uses **Robinhood Chain CA**, not stale Base addresses  
+- $FINCH / product token uses **Robinhood Chain CA**, not stale Base addresses  
 
 ## Fallback
 
