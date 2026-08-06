@@ -1,3 +1,7 @@
+---
+icon: gear-complex-api
+---
+
 # API Market
 
 Two-sided **model inference** marketplace (not arbitrary HTTPS endpoints). Buyers call

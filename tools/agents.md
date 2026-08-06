@@ -1,37 +1,23 @@
+---
+icon: user-hat-tie
+---
+
 # Agent tools
 
-| Tool | Purpose |
-|------|---------|
-| `agent_spawn` | Create named persistent agent / tracker |
-| `agent_recall` | Load latest state |
-| `agent_update` | Progress / notes |
-| `agent_schedule` | Recurring autonomous runs (**confirm first**) |
-| `agent_unschedule` | Remove schedule |
-| `agent_pause` / `agent_resume` | Control |
-| `agent_identity` | Custodial Base identity address |
-| `agent_ledger` | Audit ledger |
-| `agent_runs` | Run history |
-| `list_agents` | List all |
-| `hire_agent` | One-shot specialist (no long-lived row) |
+| Tool           | Purpose                                                        |
+| -------------- | ---------------------------------------------------------------- |
+| `agent_spawn`  | Create a named persistent agent / tracker with a goal              |
+| `agent_recall` | Load latest state — own updates plus related memory/vault context matching the goal |
+| `agent_update` | Log progress / findings (new version each call, full history kept) |
+| `agent_ledger` | Audit of what the agent has done                                    |
 
-## Spawn vs hire vs app agents
+That's the whole MCP agent surface. `agent_schedule`, `agent_unschedule`, `agent_pause`, `agent_resume`, `agent_identity`, `agent_runs`, `list_agents`, and `hire_agent` no longer exist — none of them ever had a working backend route, and they were removed rather than left dangling.
 
-| Path | Use when |
-|------|----------|
-| `agent_spawn` | Multi-session project tracker you will recall later |
-| `hire_agent` | Immediate one-shot analysis |
-| App “create agent” | Full in-app agent with skills pack (UI hub) |
+## MCP agents vs. real autonomous execution
 
-## Confirmation checklist for schedules
+An MCP-spawned agent is a persistent tracker: it only ever updates when something explicitly calls `agent_update`. Real unattended, scheduled execution — an agent that researches on its own and logs findings with no chat session involved — is an **app-only** feature (Finch App → an agent's detail page → "Run autonomously"). There is no MCP tool for it. See [../agents.md](../agents.md) for how it works and its guardrails (no fund-moving authority, 6-hour minimum interval).
 
-- [ ] Goal clear  
-- [ ] Cadence clear  
-- [ ] Cost disclosed  
-- [ ] Vault write policy clear  
-- [ ] User said yes  
+## Related
 
-## Identity warning
-
-Do not instruct users to send funds to `agent_identity` addresses without explaining custodial control.
-
-See [../agents.md](../agents.md) and [../security.md](../security.md).
+* [../agents.md](../agents.md)
+* [../security.md](../security.md)

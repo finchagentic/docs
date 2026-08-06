@@ -1,12 +1,16 @@
+---
+icon: sliders
+---
+
 # Configuration
 
 ## Tool palettes
 
-| `FINCH_TOOLS` | Meaning |
-|-----------------|---------|
-| `core` (default) | Smaller palette — lower LLM context cost |
-| `all` | Full registered set (**121** tools) |
-| `defi` | DeFi-focused subset (Base + RH tools included) |
+| `FINCH_TOOLS`    | Meaning                                        |
+| ---------------- | ---------------------------------------------- |
+| `core` (default) | Smaller palette — lower LLM context cost       |
+| `all`            | Full registered set (**116** tools)            |
+| `defi`           | DeFi-focused subset (Base + RH tools included) |
 
 Set in MCP client `env`:
 
@@ -20,40 +24,40 @@ Banner / doctor report **exposed** count, not always the full registered total.
 
 ### Account / backend
 
-| Variable | Required | Purpose |
-|----------|----------|---------|
+| Variable              | Required                    | Purpose                        |
+| --------------------- | --------------------------- | ------------------------------ |
 | `FINCH_SESSION_TOKEN` | Recommended for cloud tools | Session from Finch App / login |
-| `FINCH_CONVEX_URL` | Rarely | Override backend site URL |
+| `FINCH_CONVEX_URL`    | Rarely                      | Override backend site URL      |
 
 ### Optional quality
 
-| Variable | Purpose |
-|----------|---------|
-| `FIRECRAWL_API_KEY` | Better web crawl/search |
-| `GITHUB_TOKEN` | `github_search_code` and private GitHub ops |
-| `ALCHEMY_API_KEY` | Faster Base RPC (optional) |
+| Variable            | Purpose                                     |
+| ------------------- | ------------------------------------------- |
+| `FIRECRAWL_API_KEY` | Better web crawl/search                     |
+| `GITHUB_TOKEN`      | `github_search_code` and private GitHub ops |
+| `ALCHEMY_API_KEY`   | Faster Base RPC (optional)                  |
 
-### Host LLM keys (only when Finch *hosts* inference)
+### Host LLM keys (only when Finch _hosts_ inference)
 
 Tools themselves do **not** need an LLM key. Keys matter for:
 
-- CLI agent loop (`finch run`)  
-- Cron / scheduled agents with no client model  
-- Some deep research report modes  
+* CLI agent loop (`finch run`)
+* Cron / scheduled agents with no client model
+* Some deep research report modes
 
-| Variable | Purpose |
-|----------|---------|
-| `BANKR_API_KEY` | Bankr gateway |
-| `ANTHROPIC_API_KEY` | Claude |
-| `OPENAI_API_KEY` | OpenAI |
-| `OPENAI_BASE_URL` | OpenAI-compatible self-host (LiteLLM, vLLM, Ollama, OpenRouter) |
-| `GROK_API_KEY` | xAI Grok |
-| `FINCH_PROVIDER` | Force `bankr` \| `anthropic` \| `openai` \| `grok` |
+| Variable            | Purpose                                                         |
+| ------------------- | --------------------------------------------------------------- |
+| `BANKR_API_KEY`     | Bankr gateway                                                   |
+| `ANTHROPIC_API_KEY` | Claude                                                          |
+| `OPENAI_API_KEY`    | OpenAI                                                          |
+| `OPENAI_BASE_URL`   | OpenAI-compatible self-host (LiteLLM, vLLM, Ollama, OpenRouter) |
+| `GROK_API_KEY`      | xAI Grok                                                        |
+| `FINCH_PROVIDER`    | Force `bankr` \| `anthropic` \| `openai` \| `grok`              |
 
 ## Guided setup
 
 ```bash
-npx -y -p @finchagentic/mcp@4.0.0 finch setup
+npx -y -p @finchagentic/mcp@4.4.1 finch setup
 ```
 
 Picks providers and can enable local vault/memory.
@@ -74,4 +78,4 @@ Frontend public env should stay minimal (`VITE_CONVEX_URL`, `VITE_CONVEX_SITE_UR
 
 ## Version pin
 
-Always pin `@finchagentic/mcp@4.0.0` in install docs and client configs. Bumping versions is a deliberate changelog event — not silent `@latest`.
+Always pin `@finchagentic/mcp@4.4.1` in install docs and client configs. Bumping versions is a deliberate changelog event — not silent `@latest`.

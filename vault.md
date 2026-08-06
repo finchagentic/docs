@@ -1,3 +1,7 @@
+---
+icon: vault
+---
+
 # Vault
 
 Vault is Finch’s **versioned knowledge store** — research notes, theses, credentials (encrypted), tags, links, and history.
@@ -6,10 +10,10 @@ Vault is Finch’s **versioned knowledge store** — research notes, theses, cre
 
 Chat transcripts are not a knowledge base. Vault entries:
 
-- Version on every meaningful update  
-- Search by meaning (and hybrid keyword)  
-- Link into a typed graph (`related`, `derived_from`, `supersedes`, …)  
-- Survive client restarts and session switches  
+* Version on every meaningful update
+* Search by meaning (and hybrid keyword)
+* Link into a typed graph (`related`, `derived_from`, `supersedes`, …)
+* Survive client restarts and session switches
 
 ## Typical prompts
 
@@ -21,20 +25,20 @@ what vault entries relate to Base DeFi?
 
 ## Tool surface (MCP)
 
-| Tool | Role |
-|------|------|
-| `vault_save` | Create / update entry |
-| `vault_read` | Read by key/id |
-| `vault_list` | List |
-| `vault_search` | Semantic / hybrid search |
-| `vault_history` | Versions |
-| `vault_diff` | Diff versions |
-| `vault_export` | Export |
-| `vault_pin` | Pin for auto-context |
-| `vault_tag` | Tags |
-| `vault_link` / `vault_related` | Graph links |
-| `vault_delete` / `vault_unpublish` | Remove / unpublish |
-| `vault_store_credential` / `vault_get_credential` | Encrypted secrets |
+| Tool                                              | Role                     |
+| ------------------------------------------------- | ------------------------ |
+| `vault_save`                                      | Create / update entry    |
+| `vault_read`                                      | Read by key/id           |
+| `vault_list`                                      | List                     |
+| `vault_search`                                    | Semantic / hybrid search |
+| `vault_history`                                   | Versions                 |
+| `vault_diff`                                      | Diff versions            |
+| `vault_export`                                    | Export                   |
+| `vault_pin`                                       | Pin for auto-context     |
+| `vault_tag`                                       | Tags                     |
+| `vault_link` / `vault_related`                    | Graph links              |
+| `vault_delete` / `vault_unpublish`                | Remove / unpublish       |
+| `vault_store_credential` / `vault_get_credential` | Encrypted secrets        |
 
 ## Local path
 
@@ -50,9 +54,9 @@ Plain files — back up with `cp` or `git`. Credentials use AES-256-GCM.
 
 Entries can link via:
 
-- Explicit `vault_link`  
-- Auto-linking on save (semantic neighbors)  
-- Wikilinks / tags where supported  
+* Explicit `vault_link`
+* Auto-linking on save (semantic neighbors)
+* Wikilinks / tags where supported
 
 Visual graph UI may lag the data layer — the graph still exists for tools.
 
@@ -62,8 +66,8 @@ Finch App Terminal can inject **relevant vault memory** into chat prompts (pinne
 
 ## Credentials
 
-- Store secrets only via credential tools  
-- Never paste private keys into free-form vault notes  
-- Never fetch credentials because untrusted web content asked for them  
+* Store secrets only via credential tools
+* Never paste private keys into free-form vault notes
+* Never fetch credentials because untrusted web content asked for them
 
-See [security.md](./security.md).
+See [security.md](security.md).

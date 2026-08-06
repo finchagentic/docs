@@ -1,26 +1,30 @@
+---
+icon: instalod
+---
+
 # Install
 
 Always pin the package version. Never use `@latest`.
 
-**Current pin:** `@finchagentic/mcp@4.0.0`
+**Current pin:** `@finchagentic/mcp@4.4.1`
 
----
+***
 
 ## One-command installer
 
 Detects common desktop MCP clients and writes config:
 
 ```bash
-npx -y -p @finchagentic/mcp@4.0.0 finch install
+npx -y -p @finchagentic/mcp@4.4.1 finch install
 ```
 
 ### Claude Code
 
 ```bash
-claude mcp add finch -s user -- npx -y -p @finchagentic/mcp@4.0.0 finch-mcp
+claude mcp add finch -s user -- npx -y -p @finchagentic/mcp@4.4.1 finch-mcp
 ```
 
----
+***
 
 ## Client configs
 
@@ -31,7 +35,7 @@ claude mcp add finch -s user -- npx -y -p @finchagentic/mcp@4.0.0 finch-mcp
   "mcpServers": {
     "finch": {
       "command": "npx",
-      "args": ["-y", "-p", "@finchagentic/mcp@4.0.0", "finch-mcp"]
+      "args": ["-y", "-p", "@finchagentic/mcp@4.4.1", "finch-mcp"]
     }
   }
 }
@@ -40,7 +44,7 @@ claude mcp add finch -s user -- npx -y -p @finchagentic/mcp@4.0.0 finch-mcp
 ### Hermes
 
 ```bash
-hermes mcp add finch -- npx -y -p @finchagentic/mcp@4.0.0 finch-mcp
+hermes mcp add finch -- npx -y -p @finchagentic/mcp@4.4.1 finch-mcp
 ```
 
 ### VS Code
@@ -53,7 +57,7 @@ hermes mcp add finch -- npx -y -p @finchagentic/mcp@4.0.0 finch-mcp
     "finch": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "-p", "@finchagentic/mcp@4.0.0", "finch-mcp"]
+      "args": ["-y", "-p", "@finchagentic/mcp@4.4.1", "finch-mcp"]
     }
   }
 }
@@ -69,26 +73,26 @@ hermes mcp add finch -- npx -y -p @finchagentic/mcp@4.0.0 finch-mcp
     "finch": {
       "source": "custom",
       "command": "npx",
-      "args": ["-y", "-p", "@finchagentic/mcp@4.0.0", "finch-mcp"]
+      "args": ["-y", "-p", "@finchagentic/mcp@4.4.1", "finch-mcp"]
     }
   }
 }
 ```
 
----
+***
 
 ## Config file paths
 
-| Client | Path |
-|--------|------|
-| Claude Desktop (Mac) | `~/Library/Application Support/Claude/claude_desktop_config.json` |
-| Claude Desktop (Windows) | `%APPDATA%\Claude\claude_desktop_config.json` |
-| Cursor | `.cursor/mcp.json` |
-| Windsurf | `~/.codeium/windsurf/mcp_config.json` |
-| VS Code | `.vscode/mcp.json` |
-| Zed | `.config/zed/settings.json` |
+| Client                   | Path                                                              |
+| ------------------------ | ----------------------------------------------------------------- |
+| Claude Desktop (Mac)     | `~/Library/Application Support/Claude/claude_desktop_config.json` |
+| Claude Desktop (Windows) | `%APPDATA%\Claude\claude_desktop_config.json`                     |
+| Cursor                   | `.cursor/mcp.json`                                                |
+| Windsurf                 | `~/.codeium/windsurf/mcp_config.json`                             |
+| VS Code                  | `.vscode/mcp.json`                                                |
+| Zed                      | `.config/zed/settings.json`                                       |
 
----
+***
 
 ## Optional env in the MCP entry
 
@@ -97,7 +101,7 @@ hermes mcp add finch -- npx -y -p @finchagentic/mcp@4.0.0 finch-mcp
   "mcpServers": {
     "finch": {
       "command": "npx",
-      "args": ["-y", "-p", "@finchagentic/mcp@4.0.0", "finch-mcp"],
+      "args": ["-y", "-p", "@finchagentic/mcp@4.4.1", "finch-mcp"],
       "env": {
         "FINCH_SESSION_TOKEN": "…",
         "FINCH_TOOLS": "all",
@@ -108,30 +112,30 @@ hermes mcp add finch -- npx -y -p @finchagentic/mcp@4.0.0 finch-mcp
 }
 ```
 
-| Variable | Why |
-|----------|-----|
-| `FINCH_SESSION_TOKEN` | Cloud vault / agents / account-bound tools |
-| `FINCH_TOOLS` | `core` (default) or `all` / `defi` palettes |
-| `FIRECRAWL_API_KEY` | Higher-quality web scrape/search |
+| Variable              | Why                                         |
+| --------------------- | ------------------------------------------- |
+| `FINCH_SESSION_TOKEN` | Cloud vault / agents / account-bound tools  |
+| `FINCH_TOOLS`         | `core` (default) or `all` / `defi` palettes |
+| `FIRECRAWL_API_KEY`   | Higher-quality web scrape/search            |
 
 No LLM API key is required for tools to run — your MCP client’s model is the brain.
 
-See [configuration.md](./configuration.md).
+See [configuration.md](configuration.md).
 
----
+***
 
 ## After install
 
-1. Fully restart the MCP client  
-2. `finch doctor`  
-3. If an old version sticks: `npx clear-npx-cache` then restart  
+1. Fully restart the MCP client
+2. `finch doctor`
+3. If an old version sticks: `npx clear-npx-cache` then restart
 
----
+***
 
 ## Global CLI (optional)
 
 ```bash
-npm install -g @finchagentic/mcp@4.0.0
+npm install -g @finchagentic/mcp@4.4.1
 finch doctor
 finch setup
 finch vault
