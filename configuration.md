@@ -57,7 +57,7 @@ Tools themselves do **not** need an LLM key. Keys matter for:
 ## Guided setup
 
 ```bash
-npx -y -p @finchagentic/mcp@4.4.1 finch setup
+npx -y -p @finchagentic/mcp@4.6.1 finch setup
 ```
 
 Picks providers and can enable local vault/memory.
@@ -78,4 +78,4 @@ Frontend public env should stay minimal (`VITE_CONVEX_URL`, `VITE_CONVEX_SITE_UR
 
 ## Version pin
 
-Always pin `@finchagentic/mcp@4.4.1` in install docs and client configs. Bumping versions is a deliberate changelog event — not silent `@latest`.
+Always pin `@finchagentic/mcp@4.6.1` in install docs and client configs. Bumping versions is a deliberate changelog event — not silent `@latest`.

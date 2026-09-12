@@ -30,8 +30,8 @@ finch vault
 Via npx without global install:
 
 ```bash
-npx -y -p @finchagentic/mcp@4.4.1 finch doctor
-npx -y -p @finchagentic/mcp@4.4.1 finch setup
+npx -y -p @finchagentic/mcp@4.6.1 finch doctor
+npx -y -p @finchagentic/mcp@4.6.1 finch setup
 ```
 
 ## Doctor expectations

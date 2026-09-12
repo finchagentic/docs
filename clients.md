@@ -10,11 +10,11 @@ icon: whmcs
 
 | Client             | Install                                                                       |
 | ------------------ | ----------------------------------------------------------------------------- |
-| **Claude Code**    | `claude mcp add finch -s user -- npx -y -p @finchagentic/mcp@4.4.1 finch-mcp` |
+| **Claude Code**    | `claude mcp add finch -s user -- npx -y -p @finchagentic/mcp@4.6.1 finch-mcp` |
 | **Cursor**         | `finch install` or `.cursor/mcp.json`                                         |
 | **Windsurf**       | `finch install` or mcp\_config.json                                           |
 | **Claude Desktop** | desktop config `mcpServers`                                                   |
-| **Hermes**         | `hermes mcp add finch -- npx -y -p @finchagentic/mcp@4.4.1 finch-mcp`         |
+| **Hermes**         | `hermes mcp add finch -- npx -y -p @finchagentic/mcp@4.6.1 finch-mcp`         |
 | **VS Code**        | `.vscode/mcp.json` with `type: stdio`                                         |
 | **Zed**            | `context_servers` + `source: custom`                                          |
 | **Codex / others** | stdio MCP entry with same npx args                                            |
@@ -24,7 +24,7 @@ Full JSON: [install.md](install.md).
 ## Tips
 
 * After config changes, **full restart** the client
-* Pin version in every entry (`@finchagentic/mcp@4.4.1`)
+* Pin version in every entry (`@finchagentic/mcp@4.6.1`)
 * Use `FINCH_TOOLS=core` if context is huge; switch to `all` when needed
 * Local vault works offline for memory/vault; chain tools still need network
 

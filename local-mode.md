@@ -9,7 +9,7 @@ Finch can run **fully local**: vault and optional memory on your disk, wallet ke
 ## Enable
 
 ```bash
-npx -y -p @finchagentic/mcp@4.4.1 finch setup
+npx -y -p @finchagentic/mcp@4.6.1 finch setup
 # answer yes to local vault (and optionally local memory)
 ```
 
