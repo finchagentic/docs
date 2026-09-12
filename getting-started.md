@@ -8,13 +8,13 @@ icon: play
 
 ```bash
 # 1. Install / configure your MCP client
-npx -y -p @finchagentic/mcp@4.6.1 finch install
+npx -y -p @finchagentic/mcp@4.6.2 finch install
 
 # 2. Health check
-npx -y -p @finchagentic/mcp@4.6.1 finch doctor
+npx -y -p @finchagentic/mcp@4.6.2 finch doctor
 
 # 3. (Optional) fully local vault + memory
-npx -y -p @finchagentic/mcp@4.6.1 finch setup
+npx -y -p @finchagentic/mcp@4.6.2 finch setup
 ```
 
 Then open Claude Code / Cursor / Hermes and say:

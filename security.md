@@ -36,7 +36,7 @@ Relevant tools: `base_mcp_estimate` → `base_mcp_swap` / `base_mcp_send`, `rh_m
 
 ```bash
 # correct
-npx -y -p @finchagentic/mcp@4.6.1 finch-mcp
+npx -y -p @finchagentic/mcp@4.6.2 finch-mcp
 
 # wrong
 npx -y @finchagentic/mcp@latest
