@@ -4,7 +4,7 @@ icon: toolbox
 
 # Tools overview
 
-Finch MCP registers **116 tools** (measured from `@finchagentic/mcp@4.6.2` `ALL_TOOLS.length`).
+Finch MCP registers **116 tools** (measured from `@finchagentic/mcp@4.6.5` `ALL_TOOLS.length`).
 
 Default exposure is the **`core`** palette. Set `FINCH_TOOLS=all` for the full set.
 

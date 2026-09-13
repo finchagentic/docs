@@ -30,8 +30,8 @@ finch vault
 Via npx without global install:
 
 ```bash
-npx -y -p @finchagentic/mcp@4.6.2 finch doctor
-npx -y -p @finchagentic/mcp@4.6.2 finch setup
+npx -y @finchagentic/mcp@4.6.5 finch doctor
+npx -y @finchagentic/mcp@4.6.5 finch setup
 ```
 
 ## Doctor expectations
@@ -50,7 +50,7 @@ Zero critical reds is the goal. Warnings for optional keys are normal.
 
 ```bash
 finch --version
-# should match pinned package, e.g. 4.6.2
+# should match pinned package, e.g. 4.6.5
 ```
 
 If clients load a stale binary: `npx clear-npx-cache` and restart the client.

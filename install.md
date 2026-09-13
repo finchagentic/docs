@@ -6,7 +6,7 @@ icon: instalod
 
 Always pin the package version. Never use `@latest`.
 
-**Current pin:** `@finchagentic/mcp@4.6.2`
+**Current pin:** `@finchagentic/mcp@4.6.5`
 
 ***
 
@@ -15,13 +15,13 @@ Always pin the package version. Never use `@latest`.
 Detects common desktop MCP clients and writes config:
 
 ```bash
-npx -y -p @finchagentic/mcp@4.6.2 finch install
+npx -y @finchagentic/mcp@4.6.5 finch install
 ```
 
 ### Claude Code
 
 ```bash
-claude mcp add finch -s user -- npx -y -p @finchagentic/mcp@4.6.2 finch-mcp
+claude mcp add finch -s user -- npx -y @finchagentic/mcp@4.6.5 finch-mcp
 ```
 
 ***
@@ -35,7 +35,7 @@ claude mcp add finch -s user -- npx -y -p @finchagentic/mcp@4.6.2 finch-mcp
   "mcpServers": {
     "finch": {
       "command": "npx",
-      "args": ["-y", "-p", "@finchagentic/mcp@4.6.2", "finch-mcp"]
+      "args": ["-y", "-p", "@finchagentic/mcp@4.6.5", "finch-mcp"]
     }
   }
 }
@@ -44,7 +44,7 @@ claude mcp add finch -s user -- npx -y -p @finchagentic/mcp@4.6.2 finch-mcp
 ### Hermes
 
 ```bash
-hermes mcp add finch -- npx -y -p @finchagentic/mcp@4.6.2 finch-mcp
+hermes mcp add finch -- npx -y @finchagentic/mcp@4.6.5 finch-mcp
 ```
 
 ### VS Code
@@ -57,7 +57,7 @@ hermes mcp add finch -- npx -y -p @finchagentic/mcp@4.6.2 finch-mcp
     "finch": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "-p", "@finchagentic/mcp@4.6.2", "finch-mcp"]
+      "args": ["-y", "-p", "@finchagentic/mcp@4.6.5", "finch-mcp"]
     }
   }
 }
@@ -73,7 +73,7 @@ hermes mcp add finch -- npx -y -p @finchagentic/mcp@4.6.2 finch-mcp
     "finch": {
       "source": "custom",
       "command": "npx",
-      "args": ["-y", "-p", "@finchagentic/mcp@4.6.2", "finch-mcp"]
+      "args": ["-y", "-p", "@finchagentic/mcp@4.6.5", "finch-mcp"]
     }
   }
 }
@@ -101,7 +101,7 @@ hermes mcp add finch -- npx -y -p @finchagentic/mcp@4.6.2 finch-mcp
   "mcpServers": {
     "finch": {
       "command": "npx",
-      "args": ["-y", "-p", "@finchagentic/mcp@4.6.2", "finch-mcp"],
+      "args": ["-y", "-p", "@finchagentic/mcp@4.6.5", "finch-mcp"],
       "env": {
         "FINCH_SESSION_TOKEN": "…",
         "FINCH_TOOLS": "all",
@@ -135,7 +135,7 @@ See [configuration.md](configuration.md).
 ## Global CLI (optional)
 
 ```bash
-npm install -g @finchagentic/mcp@4.6.2
+npm install -g @finchagentic/mcp@4.6.5
 finch doctor
 finch setup
 finch vault

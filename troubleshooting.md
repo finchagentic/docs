@@ -15,10 +15,10 @@ icon: bug
 
 ```bash
 npx clear-npx-cache
-npx -y -p @finchagentic/mcp@4.6.2 finch --version
+npx -y @finchagentic/mcp@4.6.5 finch --version
 ```
 
-Ensure every client entry pins `@4.6.2`.
+Ensure every client entry pins `@4.6.5`.
 
 ## Auth / session errors
 

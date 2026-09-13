@@ -98,7 +98,7 @@ This documentation covers:
 
 | Fact                          | Value                                             |
 | ----------------------------- | ------------------------------------------------- |
-| MCP package                   | `@finchagentic/mcp@4.6.2` (pin — never `@latest`) |
+| MCP package                   | `@finchagentic/mcp@4.6.5` (pin — never `@latest`) |
 | Registered tools              | **116**                                           |
 | Default tool palette          | `core` (set `FINCH_TOOLS=all` for full set)       |
 | Primary chains                | Base `8453` · Robinhood Chain `4663`              |
