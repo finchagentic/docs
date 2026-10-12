@@ -70,6 +70,7 @@ This documentation covers:
 | [Agent tools](tools/agents.md)                | lifecycle · identity · ledger      |
 | [Base DeFi](tools/base-defi.md)               | `base_mcp_*` swaps, send, lend     |
 | [Robinhood Chain](tools/robinhood-chain.md)   | `rh_mcp_*` stocks + crypto         |
+| [Solana](tools/solana.md)                     | `sol_*` swaps, send, launch        |
 | [Research](tools/research.md)                 | web · deep\_research · compare     |
 | [Market & scanner](tools/market.md)           | boards · scores · playbooks        |
 | [GitHub & OS](tools/github-os.md)             | github\_\* · diagnostics · shell   |
@@ -101,7 +102,7 @@ This documentation covers:
 | MCP package                   | `@finchagentic/mcp@4.6.5` (pin — never `@latest`) |
 | Registered tools              | **116**                                           |
 | Default tool palette          | `core` (set `FINCH_TOOLS=all` for full set)       |
-| Primary chains                | Base `8453` · Robinhood Chain `4663`              |
+| Chains                        | Base `8453` · Robinhood Chain `4663` · Solana     |
 | Settlement asset (API Market) | USDG on Robinhood Chain                           |
 | npm                           | https://www.npmjs.com/package/@finchagentic/mcp   |
 

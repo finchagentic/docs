@@ -28,3 +28,4 @@
   * [Tools overview](tools/overview.md)
   * [Research tools](tools/research.md)
   * [Robinhood Chain tools](tools/robinhood-chain.md)
+  * [Solana tools](tools/solana.md)

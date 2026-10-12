@@ -19,6 +19,7 @@ Default exposure is the **`core`** palette. Set `FINCH_TOOLS=all` for the full s
 | Workflows       | 13    | automations, monitors, packets, `schedule_research`  |
 | Base DeFi       | 12    | `base_mcp_*`, `get_defi_yields`                      |
 | Robinhood Chain | 14    | `rh_mcp_*`, `rh_*`                                   |
+| Solana          | 7     | `sol_*`                                              |
 | Research        | 5     | web + `deep_research` + compare/chain                |
 | Market          | 9     | boards, thesis, `trade_plan`                         |
 | Scanner / audit | 4     | `score_token`, `check_token`, `scan_market`, `audit_contract` |
