@@ -42,7 +42,8 @@ API Market buyer/seller settlement uses **USDG** on Robinhood Chain — see [../
 
 ## $FINCH token note
 
-Product CA on RH (current): `0x842245b92b3932aa8e759a1dac1eb5ce10cc4f0e`\
+Official CA (Solana, pump.fun): `4LKS9yUYaBEZyzsaExmFXcWbG9pDBX7AWhseigVYpump`\
+Staking in the Finch App still settles in the Robinhood Chain ERC-20 `0x879f29204a5ff842c66f0f65e0f2e422073acce7`.\
 Do not use stale Base CAs for $FINCH trading/analysis.
 
 ## Rules

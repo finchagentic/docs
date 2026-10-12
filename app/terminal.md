@@ -49,7 +49,7 @@ Operators set Convex env:
 * Swap/send/stake → estimate or preview card → human confirm → execute with `confirmed=true`. The model never treats its own `confirmed=true` output as sufficient on its own — the UI only renders a real confirm card after a first call comes back blocked, and only a genuine click re-sends with authorization.
 * RH research → full board first (`get_rh_chain`), not a single-token collapse
 * A Robinhood-chain token that isn't ETH/WETH/USDG/FINCH and isn't on the curated board is almost certainly a Pons launchpad token — resolve it with `pons_search` first, never guess an address
-* $FINCH / product token uses **Robinhood Chain CA**, not stale Base addresses
+* $FINCH official CA is the Solana mint `4LKS9yUYaBEZyzsaExmFXcWbG9pDBX7AWhseigVYpump`; staking uses the Robinhood Chain ERC-20. Never use stale Base addresses
 
 ## Fallback
 
